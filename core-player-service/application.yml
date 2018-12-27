@@ -1,10 +1,11 @@
-server:
-  port: 8764
 eureka:
   instance:
-    preferIpAddress: true
+    lease-renewal-interval-in-seconds: 10
   client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://eurekaservice:9091/eureka/
+    service-url:
+      defaultZone: http://${tpd.appconfig.peer2-address}/eureka
+
+tpd:
+  appconfig:
+    peer1-address: eureka-peer1:8761
+    peer2-address: eureka-peer2:8762
