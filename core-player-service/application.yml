@@ -9,3 +9,6 @@ tpd:
   appconfig:
     peer1-address: eureka-peer1:8761
     peer2-address: eureka-peer2:8762
+
+server:
+  port: 8764
