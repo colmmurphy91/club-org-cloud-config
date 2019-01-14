@@ -1,0 +1,22 @@
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+  client:
+    service-url:
+      defaultZone: http://${tpd.appconfig.peer1-address}/eureka
+    register-with-eureka: false
+    fetch-registry: true
+
+
+tpd:
+  appconfig:
+    peer1-address: eureka-peer1:8761
+    peer2-address: eureka-peer2:8762
+
+server:
+  port: 8080
+zuul:
+  routes:
+    core-team-service:
+      path: /core-team-service/**
+      serviceId: core-team-service
