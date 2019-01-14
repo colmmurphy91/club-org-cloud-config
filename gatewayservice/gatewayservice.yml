@@ -18,5 +18,5 @@ server:
 zuul:
   routes:
     core-team-service:
-      path: /core-team-service/**
-      serviceId: core-team-service
+      path: "/core-team-service/**"
+      serviceId: "core-team-service"
