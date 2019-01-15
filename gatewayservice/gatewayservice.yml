@@ -5,6 +5,7 @@ eureka:
     service-url:
       defaultZone: http://${tpd.appconfig.peer2-address}/eureka
     register-with-eureka: false
+    fetch-registry: true
 
 
 tpd:
