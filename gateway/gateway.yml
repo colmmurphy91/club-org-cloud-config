@@ -10,4 +10,4 @@ spring:
         - id: core-team-service
           uri: lb://core-team-service
           predicates:
-            - Path=/team/**
+            - Path=/teamservice/**
