@@ -8,6 +8,6 @@ spring:
           enabled: true
       routes:
         - id: core-team-service
-          uri: lb://core-team-serice
+          uri: lb://core-team-service
           predicates:
             - Path=/team/**
