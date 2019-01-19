@@ -6,8 +6,8 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: core-team-service
-          uri: lb://core-team-service
-          predicates:
-            - Path=/teamservice/**
+#       routes:
+#         - id: core-team-service
+#           uri: lb://core-team-service
+#           predicates:
+#             - Path=/teamservice/**
