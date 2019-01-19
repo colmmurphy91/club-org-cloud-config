@@ -11,3 +11,6 @@ spring:
           uri: lb://core-team-service
           predicates:
             - Path=/teamservice/**
+          filters:
+            filters:
+              - StripPrefix=1
